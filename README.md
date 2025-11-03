@@ -47,29 +47,30 @@ Nesting Modes
 1. Fixed Depth (d)
 
 Simulation layers stop after a fixed number of generations.
+
 The total simulated universes follow a geometric series:
 
 S = k + k² + … + kᵈ
 
 2. Probabilistic (capped)
 
-Each simulation spawns the next layer with probability p_allow, up to a maximum cap D.
+Each simulation spawns another layer with probability p_allow, up to a maximum depth D.
 
 3. Probabilistic (infinite)
 
-If m = k × p_allow is less than 1, the expected number of simulated universes converges:
+If m = k × p_allow < 1, then:
 
 S = k / (1 − m)
 
-If m is 1 or greater, simulated universes diverge and the probability of being base approaches zero.
+If m ≥ 1, simulated universes diverge and the probability of being base approaches zero.
 
 Live Version (GitHub Pages)
 
-Once GitHub Pages is enabled, the calculator will be live at:
+Once GitHub Pages is enabled, the calculator will be available at:
 
 https://YOUR_USERNAME.github.io/simulation-calculator/
 
-You may also link directly to the calculator file:
+Or you can link directly to the calculator file:
 
 https://YOUR_USERNAME.github.io/simulation-calculator/simulation_probability_calculator_v7.html
 
